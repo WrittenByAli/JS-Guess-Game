@@ -1,0 +1,71 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+#game-container {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 320px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title */
+#game-container h2 {
+  margin-bottom: 20px;
+}
+
+/* Input */
+input[type="number"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: box-shadow 0.3s;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #5a67d8;
+}
+
+/* Button */
+button {
+  padding: 10px 20px;
+  background-color: #5a67d8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #434190;
+}
+
+/* Message */
+#message {
+  margin-top: 20px;
+  font-weight: bold;
+  min-height: 24px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
